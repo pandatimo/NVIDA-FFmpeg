@@ -21,7 +21,7 @@ If the version does not satisfied prerequisites, install the new version in the 
 Download the tar.gz file from the following link.\
 [URL] : [Cmake download](https://cmake.org/download/)
 
-or use ```wget``` commend as below.
+or use ```wget``` command as below.
 ```
 wget https://github.com/Kitware/CMake/releases/download/v(VERSION_NAME)/cmake-(VERSION_NAME).tar.gz
 ```
@@ -48,7 +48,7 @@ Log out of the terminal and re-enter it, then press ```cmake --version``` to ver
 ## FFmpeg Install
 ### 2-0. Add Path for Installation
 Since FFmpeg library are installed in ```/usr/local/lib```, it is necessary to inform the location.\
-Add following commend to ```~/.bashrc``` file.
+Add following command to ```~/.bashrc``` file.
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64
 ```
@@ -58,6 +58,12 @@ or ```export LD_LIBRARY_PATH``` is already exist, add ```:/usr/local/lib:/usr/lo
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64:/usr/local/lib:/usr/local/lib64
 ```
 
+After adding the location, press the following command and re-enter the terminal.
+```
+source ~/.bashrc
+```
+
+Verify ```/usr/local/lib``` and ```/usr/local/lib64``` with ```echo $LD_LIBRARY_PATH```.
 
 
 
