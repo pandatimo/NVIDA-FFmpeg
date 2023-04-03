@@ -90,6 +90,13 @@ git pull
 ```bash
 ./configure --enable-shared
 ```
+by applying `--enable-shared` option, set to create a shared library (.so file) instead of the static library (.a file) required by the Nvidia Video Process Framework.
+
+Additionally, if you need libx264 and libx265 for encoder, add additonal options as below.
+```bash
+./configure --enable-shared --enable-gpl --enable-libx264 --enable-libx265
+```
+> If an error saying that 'ERROR: x264 not found using pkg-config', see [issue B](#libx265)
 
 ## Issue
 <a name="OpenSSL"></a>
@@ -97,4 +104,20 @@ git pull
 If you receive an error that there is no OpenSSL when installing the ./bootstrap, install OpenSSL as below.
 ```bash
 sudo apt install libssl-dev
+```
+<a name="libx265"></a>
+### B. libx264, libx265
+If you obtain 'ERROR: x264 not found using pkg-config' when installing FFmpeg, you can simply libx264-dev as below.
+```bash
+sudo apt install -y libx264-dev
+```
+
+However, in the case of 'libx265', you can solve problem by these instructions.\
+[Original URL](https://bitbucket.org/multicoreware/x265_git/wiki/Home)
+```bash
+git clone https://bitbucket.org/multicoreware/x265_git.git
+cd x265_git/build/linux
+./make-Makefiles.bash
+make
+make install
 ```
