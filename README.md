@@ -40,7 +40,27 @@ cd cmake-3.26.2
 make
 sudo make install
 ```
-> If an error for OpenSSL occurs, seee [issue A](#OpenSSL).
+> If an error for OpenSSL occurs, see [issue A](#OpenSSL).
+
+### 1-3. Check Installed Version
+Log out of the terminal and re-enter it, then press ```cmake --version``` to verify correctly installing Cmake.
+
+## FFmpeg Install
+### 2-0. Add Path for Installation
+Since FFmpeg library are installed in ```/usr/local/lib```, it is necessary to inform the location.\
+Add following commend to ```~/.bashrc``` file.
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64
+```
+
+or ```export LD_LIBRARY_PATH``` is already exist, add ```:/usr/local/lib:/usr/local/lib64``` after Cuda LD_LIBRARY_PATH setting.
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64:/usr/local/lib:/usr/local/lib64
+```
+
+
+
+
 
 ## Issue
 <a name="OpenSSL"></a>
