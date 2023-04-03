@@ -21,7 +21,7 @@ If the version does not satisfied prerequisites, install the new version in the 
 Download the tar.gz file from the following link.\
 [URL] : [Cmake download](https://cmake.org/download/)
 
-or use ```wget``` commend as follows.
+or use ```wget``` commend as below.
 ```
 wget https://github.com/Kitware/CMake/releases/download/v(VERSION_NAME)/cmake-(VERSION_NAME).tar.gz
 ```
@@ -39,4 +39,11 @@ cd cmake-3.26.2
 ./bootstrap
 make
 sudo make install
+```
+
+## Issue.
+### A. OpenSSL issue
+If you receive an error that there is no OpenSSL when installing the ./bootstrap, install OpenSSL as below.
+```
+sudo apt install libssl-dev
 ```
