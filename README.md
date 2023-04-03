@@ -40,8 +40,10 @@ cd cmake-3.26.2
 make
 sudo make install
 ```
+> If an error for OpenSSL occurs, seee [issue A](#OpenSSL).
 
-## Issue.
+## Issue
+<a name="OpenSSL"></a>
 ### A. OpenSSL issue
 If you receive an error that there is no OpenSSL when installing the ./bootstrap, install OpenSSL as below.
 ```
