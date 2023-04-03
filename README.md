@@ -11,7 +11,7 @@
   - Check with ```gcc --version``` or ```g++ --version```
 
 ## 1. Cmake Install
-### 1-0. Check cmake version
+### 1-0. Check Cmake version
 ```
 cmake --version
 ```
@@ -19,15 +19,15 @@ If the version does not satisfied prerequisites, install the new version in the 
 
 ### 1-1. Appropriate version download
 Download the tar.gz file from the following link.\
-URL : [Cmake download](https://cmake.org/download/)
+[URL] : [Cmake download](https://cmake.org/download/)
 
-or use ```wget``` commend as follows.\
+or use ```wget``` commend as follows.
 ```
 wget https://github.com/Kitware/CMake/releases/download/v(VERSION_NAME)/cmake-(VERSION_NAME).tar.gz
 ```
 Insert the version you want to install into (VERSION_NAME). Note, our example use 3.26.2.
 
-### 1-2. Install
+### 1-2. Install Cmake
 - Unzip
 ```
 tar -xvf cmake-3.26.2.tar.gz
