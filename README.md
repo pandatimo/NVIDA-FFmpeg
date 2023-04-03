@@ -11,3 +11,11 @@
   - Check with ```gcc --version``` or ```g++ --version```
 
 ## 1. Cmake Install
+### 1-0. Check cmake version
+```
+cmake --version
+```
+If the version does not satisfied prerequisites, install the new version in the following manner.
+
+### 1-1. Latest version download
+Download the zip file from the following link
