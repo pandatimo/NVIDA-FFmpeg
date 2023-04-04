@@ -107,7 +107,7 @@ sudo apt install libssl-dev
 ```
 <a name="libx265"></a>
 ### B. libx264, libx265
-If you obtain 'ERROR: x264 not found using pkg-config' when installing FFmpeg, you can simply libx264-dev as below.
+If you obtain 'ERROR: x264 not found using pkg-config' when installing FFmpeg, you can simply install 'libx264-dev' as below.
 ```bash
 sudo apt install -y libx264-dev
 ```
