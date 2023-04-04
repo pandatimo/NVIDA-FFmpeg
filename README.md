@@ -1,6 +1,8 @@
 # Install guideline for *Nvidia Video Processing Framework*
 > This is a guideline for installing https://github.com/NVIDIA/VideoProcessingFramework
 
+> **Thank you for your efforts : [[Junmin Lee]](https://github.com/jumin-lee)**
+
 ## 0. Prerequisites
 - Cuda Toolkit
 - FFmpeg (with libavfilter >= 7.110.100)
