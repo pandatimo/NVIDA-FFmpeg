@@ -116,6 +116,8 @@ ls /usr/local/lib
 Verify installing shared libraries such as 'libavcodec.so' by above command.
 If there are no .so files, re-start installation from step **2-0**.
 
+---
+---
 ## Issue
 <a name="OpenSSL"></a>
 ### A. OpenSSL issue
