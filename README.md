@@ -67,7 +67,7 @@ source ~/.bashrc
 
 Verify `/usr/local/lib` and `/usr/local/lib64` with `echo $LD_LIBRARY_PATH`.
 
-### 2-1. FFmpeg Install(apt-get Install - Not Recommended)
+### ~~2-1. FFmpeg Install(apt-get Install - Not Recommended)~~
 > Warning: May not be suitable for Ubuntu ≥ 22.04.
 ```bash
 sudo apt-get install ffmpeg -y
