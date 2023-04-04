@@ -20,8 +20,7 @@ cmake --version
 If the version does not satisfied prerequisites, install the new version in the following manner.
 
 ### 1-1. Appropriate version download
-Download the tar.gz file from the following link.\
-[URL] : [Cmake download](https://cmake.org/download/)
+Download the tar.gz file from the following link : [[URL]](https://cmake.org/download/)
 
 or use `wget` command as below.
 ```bash
