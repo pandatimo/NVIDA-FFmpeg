@@ -98,6 +98,22 @@ Additionally, if you need libx264 and libx265 for encoder, add additonal options
 ```
 > If an error saying that 'ERROR: x264 not found using pkg-config', see [issue B](#libx265)
 
+- Build
+```bash
+make
+sudo make install
+```
+
+### 2-3. Installation Check
+Check ffmpeg version with 'ffmpeg -version'.
+
+- Check Library
+```bash
+ls /usr/local/lib
+```
+Verify installing shared libraries such as 'libavcodec.so' by above command.
+If there are no .so files, re-start installation from step **2-0**.
+
 ## Issue
 <a name="OpenSSL"></a>
 ### A. OpenSSL issue
@@ -113,11 +129,11 @@ sudo apt install -y libx264-dev
 ```
 
 However, in the case of 'libx265', you can solve problem by these instructions.\
-[Original URL](https://bitbucket.org/multicoreware/x265_git/wiki/Home)
+[[Original URL]](https://bitbucket.org/multicoreware/x265_git/wiki/Home)
 ```bash
 git clone https://bitbucket.org/multicoreware/x265_git.git
 cd x265_git/build/linux
 ./make-Makefiles.bash
 make
-make install
+sudo make install
 ```
