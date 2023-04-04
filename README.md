@@ -95,9 +95,9 @@ git pull
 ```
 by applying `--enable-shared` option, set to create a shared library (.so file) instead of the static library (.a file) required by the Nvidia Video Process Framework.
 
-Additionally, if you need libx264 and libx265 for encoder, add additonal options as below.
+Additionally, if you need libx264 and libx265 for encoder, add additonal options as below. (+'png')
 ```bash
-./configure --enable-shared --enable-gpl --enable-libx264 --enable-libx265
+./configure --enable-shared --enable-gpl --enable-libx264 --enable-libx265 --enable-zlib
 ```
 > If an error saying that 'ERROR: x264 not found using pkg-config', see [issue B](#libx265)
 
