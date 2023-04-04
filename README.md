@@ -101,6 +101,8 @@ Additionally, if you need libx264 and libx265 for encoder, add additonal options
 ```
 > If an error saying that 'ERROR: x264 not found using pkg-config', see [issue B](#libx265)
 
+If you need additional options, see [[URL]](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#FFmpeg).
+
 - Build
 ```bash
 make
