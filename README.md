@@ -1,6 +1,5 @@
 # Install guideline for *Nvidia Video Processing Framework*
-> This is a guideline for installing https://github.com/NVIDIA/VideoProcessingFramework
-
+> This is a guideline for installing https://github.com/NVIDIA/VideoProcessingFramework \
 > **Thank you for your efforts : [[Junmin Lee]](https://github.com/jumin-lee)**
 
 ## 0. Prerequisites
