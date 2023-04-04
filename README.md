@@ -75,6 +75,7 @@ sudo apt-get install ffmpeg -y
 Easiest way to install ffmpeg package, but may not contain latest version of ffmpeg.\
 If installed, check for version with `ffmpeg -version`
 
+  
 ### 2-2. FFmpeg Install(git repository install)
 - Git Repository Clone
 ```bash
@@ -116,6 +117,39 @@ ls /usr/local/lib
 Verify installing shared libraries such as 'libavcodec.so' by above command.
 If there are no .so files, re-start installation from step **2-0**.
 
+## 3. NVIDA Video Processing Framework Install
+### 3-0. Checklist
+- nvcc : `nvcc --version` or `nvcc -V`
+- Ninja : `which ninja`
+  - If not exist, try `sudo apt-get install ninja-build`
+- Nivida Driver : `nvidia-smi`
+
+### 3-1 Installation
+- Create new environment
+```bash
+conda create -n <name> python=<version>
+conda activate <name>
+```
+
+- Git Clone
+```bash
+git clone https://github.com/NVIDIA/VideoProcessingFramework.git
+```
+[[Original Code]](https://github.com/NVIDIA/VideoProcessingFramework)
+
+- Installation
+```bash
+cd VideoProcessingFramework
+pip3 install .
+```
+
+### 3-2 Check Installation
+```bash
+python3
+import PyNvCodec
+```
+
+
 ---
 ---
 ## Issue
@@ -126,6 +160,7 @@ If you receive an error that there is no OpenSSL when installing the ./bootstrap
 sudo apt install libssl-dev
 ```
 <a name="libx265"></a>
+
 ### B. libx264, libx265
 If you obtain 'ERROR: x264 not found using pkg-config' when installing FFmpeg, you can simply install 'libx264-dev' as below.
 ```bash
