@@ -167,7 +167,7 @@ If you obtain 'nasm/yasm is too old', you can solve this problem as below.
 sudo apt-get install nasm
 ```
 <a name="libx265"></a>
-### C. libx264, libx265
+### C. libx264, libx265, zlib
 If you obtain 'ERROR: x264 not found using pkg-config' when installing FFmpeg, you can simply install 'libx264-dev' as below.
 ```bash
 sudo apt install -y libx264-dev
@@ -181,4 +181,9 @@ cd x265_git/build/linux
 ./make-Makefiles.bash
 make
 sudo make install
+```
+
+In the case of 'zlib', following instructions can help you.
+```bash
+sudo apt install zlib1g-dev
 ```
