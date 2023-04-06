@@ -47,7 +47,7 @@ Log out of the terminal and re-enter it, then press `cmake --version` to verify 
 
 ## FFmpeg Install
 ### 2-0. Add Path for Installation
-Since FFmpeg library are installed in `/usr/local/lib`, it is necessary to inform the location.\
+Since FFmpeg library will be installed in `/usr/local/lib`, it is necessary to inform the location.\
 Add following command to `~/.bashrc` file.
 ```bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64
@@ -88,6 +88,7 @@ git pull
 ```
 
 - Configure
+> If 'nasm/yasm' error occurs, see [issue B]()
 ```bash
 ./configure --enable-shared
 ```
@@ -97,7 +98,7 @@ Additionally, if you need libx264 and libx265 for encoder, add additonal options
 ```bash
 ./configure --enable-shared --enable-gpl --enable-libx264 --enable-libx265 --enable-zlib
 ```
-> If an error saying that 'ERROR: x264 not found using pkg-config', see [issue B](#libx265)
+> If an error saying that 'ERROR: x264 not found using pkg-config', see [issue C](#libx265)
 
 If you need additional options, see [[URL]](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#FFmpeg).
 
@@ -160,8 +161,13 @@ If you receive an error that there is no OpenSSL when installing the ./bootstrap
 sudo apt install libssl-dev
 ```
 <a name="libx265"></a>
+### B. nasm/yasm
+If you obtain 'nasm/yasm is too old', you can solve this problem as below.
+```bash
+sudo apt-get install nasm
+```
 
-### B. libx264, libx265
+### C. libx264, libx265
 If you obtain 'ERROR: x264 not found using pkg-config' when installing FFmpeg, you can simply install 'libx264-dev' as below.
 ```bash
 sudo apt install -y libx264-dev
