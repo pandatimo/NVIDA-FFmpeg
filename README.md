@@ -88,7 +88,7 @@ git pull
 ```
 
 - Configure
-> If 'nasm/yasm' error occurs, see [issue B]()
+> If 'nasm/yasm' error occurs, see [issue B](#nasm)
 ```bash
 ./configure --enable-shared
 ```
@@ -160,13 +160,13 @@ If you receive an error that there is no OpenSSL when installing the ./bootstrap
 ```bash
 sudo apt install libssl-dev
 ```
-<a name="libx265"></a>
+<a name="nasm"></a>
 ### B. nasm/yasm
 If you obtain 'nasm/yasm is too old', you can solve this problem as below.
 ```bash
 sudo apt-get install nasm
 ```
-
+<a name="libx265"></a>
 ### C. libx264, libx265
 If you obtain 'ERROR: x264 not found using pkg-config' when installing FFmpeg, you can simply install 'libx264-dev' as below.
 ```bash
